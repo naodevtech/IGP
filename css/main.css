@@ -1,0 +1,619 @@
+*{
+    transition-duration: 1s;
+    font-family: sans-serif;
+}
+
+body{
+    margin:0;
+}
+.container{
+    display: flex;
+    height:100vh;
+}
+
+.menu-burger{
+    height:100%;
+    width:18vw;
+    background: #20233E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.menu-burger img{
+    height:100px;
+    width:100px;
+    margin:auto;
+    animation-name: logo;
+    animation-duration: 1s;
+}
+
+
+.box-links-buttons{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.box-links-buttons button{
+    width:200px;
+    height:40px;
+    margin:30px;
+    background: #F7F7FF;
+    border:none;
+    border-radius: 3rem;
+    outline: none;
+    color:#20233E;
+    font-weight: 900;
+    font-size: 1.3em;
+    transition-duration: 0.6s;
+    margin-left:60px;
+    font-family: 'Sulphur Point', sans-serif;
+    cursor: pointer;
+}
+
+
+.box-links-buttons button:hover{
+    /* border-top-left-radius: 600px 400px;
+    border-top-right-radius: 600px 400px;
+    border-bottom-left-radius: 600px 400px;
+    border-bottom-right-radius: 600px 400px; */
+    transform: scale(1.2);
+}
+
+
+.box-buttons-bottoms{
+    display: flex;
+    justify-content: center;
+}
+
+.box-buttons-bottoms .button-one{
+    margin:20px;
+    width:50px;
+    height:50px;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+    background-image: url('../img/facebook\ \(1\).svg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.box-buttons-bottoms .button-two{
+    margin:20px;
+    width:50px;
+    height:50px;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+    background-image: url('../img/snapchat.svg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.stats-container{
+    background: #F7F7FF;
+    width:55vw;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    overflow: auto;
+}
+
+.stats-container h1{
+    font-weight: 400;
+}
+
+.stats-container h3{
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.box-calendar{
+    display: flex;
+    justify-content: center;
+    margin-top:15px;
+}
+
+.calendar{
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    height:70px;
+    padding:20px;
+    border-radius: 4rem;
+    animation-name: calendar;
+    animation-duration: 0.8s;
+}
+
+.box-day{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    width:11.42%;
+    height:70px;
+    transition-duration: 0.4s;
+    padding:10px;
+    cursor: pointer;
+}
+
+.box-day p {
+    color:rgb(176, 173, 173);
+}
+
+.box-day h5{
+    margin: 5px;
+    font-size: 1.7em;
+}
+
+.box-day:hover{
+    background: #F7F7FF;
+    border-radius: 3rem;
+    border: 10px solid white;
+    transform: scale(1.2);
+    color:#FF6638;
+}
+
+.container-networks{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    overflow: visible;
+    /* margin-top:50px; */
+}
+
+.box-social-one{
+    background: #FFFFFF;
+    height:150px;
+    width:30%;
+    border-radius: 3rem;
+    padding: 25px;
+    margin:15px;
+    transition-duration: 1s;
+    animation-name: boxSocialOne;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+.box-social-one:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.379);
+}
+
+.box-social-two{
+    background: #FFFFFF;
+    height:150px;
+    width:30%;
+    border-radius: 3rem;
+    padding: 25px;
+    margin:10px;
+    transition-duration: 1s;
+    animation-name: boxSocialTwo;
+    animation-duration: 2.5s;
+    cursor: pointer;
+    
+}
+
+.box-social-two:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.379);
+}
+
+.box-social-three{
+    background: #20233E;
+    height:150px;
+    width:30%;
+    border-radius: 3rem;
+    padding: 25px;
+    margin:10px;
+    transition-duration: 1s;
+    animation-name: boxSocialThree;
+    animation-duration: 3s;
+    cursor: pointer;
+}
+
+.box-social-three:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.379);
+}
+
+.title-box-one{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.title-box-two{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.title-box-three{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.title-box-three h4{
+    color:white;
+}
+
+
+.title-box-one button{
+    height:40px;
+    width:40px;
+    background: #FF6638;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+}
+
+.title-box-two button{
+    height:40px;
+    width:40px;
+    background: #53D7E4;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+}
+
+.title-box-three button{
+    height:40px;
+    width:40px;
+    background: #FFA024;
+    border: none;
+    border-radius: 5rem;
+    outline: none;
+}
+
+/* .container-networks h3{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FF6638;;
+} */
+
+.followers-one{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FF6638;;
+}
+
+.followers-two{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #53D7E4;;
+}
+
+.followers-three{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FFA024;;
+}
+
+.progressionBox{
+    display: flex;
+    align-items: center;
+}
+
+.progressBar-networks-one{
+    background: #FF6638;
+    height:4px;
+    width: 78%;
+    margin-top:-30px;
+    animation-name: progressBarOne;
+    animation-duration: 6s;
+}
+
+.progressBar-networks-two{
+    background: #53D7E4;
+    height:4px;
+    width: 57%;
+    margin-top:-30px;
+    animation-name: progressBarTwo;
+    animation-duration: 6s;
+}
+
+.progressBar-networks-three{
+    background: #FFA024;
+    height:4px;
+    width: 78%;
+    margin-top:-30px;
+    animation-name: progressBarThree;
+    animation-duration: 6s;
+}
+
+.progressBar-networksEmpty-one{
+    background: #F7F7FF;
+    height:4px;
+    width:22%;
+    margin-top:-30px;
+    animation-name: progressBarEmptyOne;
+    animation-duration: 6s;
+}
+
+.progressBar-networksEmpty-two{
+    background: #F7F7FF;
+    height:4px;
+    width:43%;
+    margin-top:-30px;
+    animation-name: progressBarEmptyOne;
+    animation-duration: 6s;
+}
+
+.progressBar-networksEmpty-three{
+    background: #F7F7FF;
+    height:4px;
+    width:22%;
+    margin-top:-30px;
+    animation-name: progressBarEmptyOne;
+    animation-duration: 6s;
+}
+
+.progressionBox h6{
+    margin-left: 14px;
+    margin-top: -10px;
+}
+
+.progressionBox-three{
+    display: flex;
+    align-items: center;
+}
+
+.progressionBox-three h6{
+    color:white;
+    margin-left: 14px;
+    margin-top: -10px;
+}
+
+.dashboard-screen{
+    margin-top:20px;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.side-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:60%;
+    padding:20px;
+}
+
+.side-up input{
+    height:200px;
+    width:80%;
+    border: none;
+    border-radius: 5rem;
+    margin:20px;
+    padding:15px;
+    background: #F7F7FF;
+    background-image: url('../img/magnifying-glass.svg') no-repeat left center;
+}
+
+.box-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-profile button{
+    height:80px;
+    width:80px;
+    border-radius: 5rem;
+    background-image: url('../img/Kayla_Person-small.jpg');
+    background-size: cover;
+}
+
+.box-infos{
+    display: flex;
+    justify-content: center;
+}
+
+.box-suits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+    cursor: pointer;
+}
+.box-suits h6{
+    font-size: 1em;
+    margin: 0;
+}
+
+.box-suits h5{
+    font-size: 1.2em;
+    margin: 20px;
+}
+.side-down{
+    display: flex;
+    flex-direction: column;
+    height:50%;
+    background: #20233E;
+    padding: 20px;
+    overflow: auto;
+}
+
+.header-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-box h2{
+    color:white;
+    margin: 0;
+}
+
+.header-box h5{
+    margin-top:10px;
+    color:#FFA024;
+}
+
+.container-notifs{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.box-notifs{
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+    transition-duration: 0.8s;
+    border-radius: 2rem;
+    padding:5px;
+    cursor: pointer;
+}
+
+.box-notifs button{
+    height:50px;
+    width:50px;
+    border-radius: 5rem;
+    margin-right:20px;
+    background-image: url('../img/Person-Curtis_4x5-e1564616444404.jpg');
+    background-size: cover;
+}
+
+.box-describeNotifs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.box-describeNotifs h4{
+    margin:10px;
+    color:white;
+    font-weight: 900;
+}
+
+.box-describeNotifs p{
+    margin:0;
+    color:#F7F7FF;
+
+}
+
+
+/* KEYFRAMES */
+
+@keyframes logo{ 
+    from{
+        transform: rotate(360deg);
+    }
+
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes calendar{ 
+    from{
+        transform: scale(0);
+    }
+
+    to{
+        transform: rotate(1.1);
+    }
+}
+
+@keyframes boxSocialOne{ 
+    from{
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes boxSocialTwo{ 
+    from{
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes boxSocialThree{ 
+    from{
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes progressBarOne{ 
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 78%;
+    }
+}
+
+@keyframes progressBarTwo{ 
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 57%;
+    }
+}
+
+@keyframes progressBarThree{ 
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 78%;
+    }
+}
+
+@keyframes progressBarEmptyOne{ 
+    from{
+        width: 22%;
+    }
+
+    to{
+        width: 22%;
+    }
+}
+
+@keyframes progressBarEmptyTwo{ 
+    from{
+        width: 43%;
+    }
+
+    to{
+        width: 43%;
+    }
+}
+
+@keyframes progressBarEmptyThree{ 
+    from{
+        width: 22%;
+    }
+
+    to{
+        width: 22%;
+    }
+}
