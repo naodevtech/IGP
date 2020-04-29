@@ -390,12 +390,12 @@ body{
 }
 
 .side-up input{
-    height:200px;
+    height:20px;
     width:80%;
     border: none;
     border-radius: 5rem;
     margin:20px;
-    padding:15px;
+    padding:10px;
     background: #F7F7FF;
     background-image: url('../img/magnifying-glass.svg') no-repeat left center;
 }
